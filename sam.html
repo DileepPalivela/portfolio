@@ -1,0 +1,242 @@
+<!-- 
+  Hello 😊.
+
+  This template has been customized for Dileep Palivela.
+
+  For inquiries or feedback, feel free to get in touch!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Site Title -->
+  <title>
+    Dileep Palivela | Web Developer & AI Enthusiast from Vizag, India.
+  </title>
+
+  <meta name="description" content="Web Developer and AI enthusiast with expertise in Angular, Flask, and ServiceNow.">
+  <meta name="keywords" content="Dileep Palivela, Web Development, AI, Angular, ServiceNow, Flask" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <script>
+    const handleFirstTab = (e) => {
+      if (e.key === 'Tab') {
+        document.body.classList.add('user-is-tabbing');
+        window.removeEventListener('keydown', handleFirstTab);
+        window.addEventListener('mousedown', handleMouseDownOnce);
+      }
+    };
+
+    const handleMouseDownOnce = () => {
+      document.body.classList.remove('user-is-tabbing');
+      window.removeEventListener('mousedown', handleMouseDownOnce);
+      window.addEventListener('keydown', handleFirstTab);
+    };
+
+    window.addEventListener('keydown', handleFirstTab);
+
+    const backToTopButton = document.querySelector(".back-to-top");
+    let isBackToTopRendered = false;
+
+    let alterStyles = (isBackToTopRendered) => {
+      backToTopButton.style.visibility = isBackToTopRendered ? "visible" : "hidden";
+      backToTopButton.style.opacity = isBackToTopRendered ? 1 : 0;
+      backToTopButton.style.transform = isBackToTopRendered ? "scale(1)" : "scale(0)";
+    };
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 700) {
+        isBackToTopRendered = true;
+        alterStyles(isBackToTopRendered);
+      } else {
+        isBackToTopRendered = false;
+        alterStyles(isBackToTopRendered);
+      }
+    });
+  </script>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Dileep Palivela</span>
+        </h1>
+        <p>Aspiring Full Stack Developer</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+         <!-- Hospital Management System -->
+<div class="work__box">
+  <div class="work__text">
+    <h3>Hospital Management System</h3>
+    <p>
+      Developed a comprehensive hospital management system for patient and staff record-keeping, appointments, and billing.
+    </p>
+    <ul class="work__list">
+      <li>Spring Boot</li>
+      <li>Angular</li>
+      <li>MySQL</li>
+    </ul>
+    <div class="work__links">
+      <a href="#" target="_blank" class="link__text">
+        Visit Site <span>&rarr;</span>
+      </a>
+      <a href="https://github.com/DileepPalivela/Hospital-Management-System.git" title="View Source Code" target="_blank">
+        <img src="C:\Users\Abhi\Downloads\github-mark-white.png" class="work__code" alt="GitHub">
+      </a>
+    </div>
+  </div>
+  <div class="work__image-box">
+    <img src="C:\Users\Abhi\Downloads\hms.jpeg" class="work__image" alt="Hospital Management System" />
+  </div>
+</div>
+
+<!-- Price Comparison for Online Shopping -->
+<div class="work__box">
+  <div class="work__text">
+    <h3>Price Comparison for Online Shopping</h3>
+    <p>
+      Built a tool using Flask and Selenium to extract product details and compare prices across Amazon, Flipkart, and Croma.
+    </p>
+    <ul class="work__list">
+      <li>Python</li>
+      <li>Flask</li>
+      <li>Selenium</li>
+    </ul>
+    <div class="work__links">
+      <a href="#" class="link__text">
+        Visit Site <span>&rarr;</span>
+      </a>
+      <a href="https://github.com/DileepPalivela/PRICE-COMPARISON-FOR-ONLINE-SHOPPING.git" target="_blank">
+        <img src="C:\Users\Abhi\Downloads\github-mark-white.png" class="work__code" title="View Source Code" alt="GitHub">
+      </a>
+    </div>
+  </div>
+  <div class="work__image-box">
+    <img src="C:\Users\Abhi\Downloads/price_comparision.jpeg" class="work__image" alt="Price Comparison for Online Shopping" />
+  </div>
+</div>
+
+<!-- Aquatic Stream Bus App -->
+<div class="work__box">
+  <div class="work__text">
+    <h3>Aquatic Stream Bus App</h3>
+    <p>
+      Designed and developed a ticket booking app featuring real-time seat availability and secure payment gateways.
+    </p>
+    <ul class="work__list">
+      <li>Flutter</li>
+      <li>Go</li>
+      <li>MySQL</li>
+    </ul>
+    <div class="work__links">
+      <a href="#" target="_blank" class="link__text">
+        Visit Site <span>&rarr;</span>
+      </a>
+      <a href="https://github.com/DileepPalivela/Aquatic-Stream-Bus-Ticket-Booking-App.git" title="View Source Code" target="_blank">
+        <img src="C:\Users\Abhi\Downloads\github-mark-white.png" class="work__code" alt="GitHub">
+      </a>
+    </div>
+  </div>
+  <div class="work__image-box">
+    <img src="C:\Users\Abhi\Desktop\OIP.jpeg" class="work__image" alt="Aquatic Stream Bus App" />
+  </div>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Skills ***** -->
+
+    <section class="skills" id="skills">
+      <div class="row">
+        <h2>Skills</h2>
+        <p>Here are the technologies and tools I specialize in:</p>
+        <ul class="skills__list">
+         
+          <li>Java</li>
+          <li>Angular</li>
+          <li>MySQL</li>
+          <li>Flask</li>
+          <li>Python (Selenium, Web Scraping)</li>
+          <li>Spring Boot</li>
+          <li>AWS Cloud</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ***** Certifications ***** -->
+
+    <section class="certifications" id="certifications">
+      <div class="row">
+        <h2>Certifications</h2>
+        <ul class="certifications__list">
+          <li>Oracle Certified Professional in Generative AI (Oracle Corporation, July 2024)</li>
+          <li>Azure AI Fundamentals (Microsoft, June 2024)</li>
+          <li>Oracle Certified Foundations Associate in AI (July 2024)</li>
+          <li>AWS Cloud Foundations and Architecture (Amazon AWS, July 2024)</li>
+          <li>Programming in Java Certification (NPTEL)</li>
+          <li>SQL Certification (Simplilearn)</li>
+          
+        </ul>
+      </div>
+    </section>
+
+    <!-- ***** Contact ***** -->
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Contact Me</h2>
+        <p> To work in an environment that encourages me to grow professionally while utilizing my skills and knowledge.
+        </p>
+        <a href="C:\Users\Abhi\Downloads/21A81A4339_Dileep_Palivela_Dec16th.pdf" class="btn btn-resume" target="_blank">
+          Resume
+        </a>
+        <ul class="contact__list">
+          <li>Email: <a href="mailto:paliveladileep18@gmail.com">paliveladileep18@gmail.com</a></li>
+          <li>Phone: +91 9346778809</li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/dileep-palivela-730a26289/" target="_blank">linkedin.com/in/dileep-palivela</a></li>
+          <li>GitHub: <a href="https://github.com/DileepPalivela" target="_blank">github.com/DileepPalivela</a></li>
+        </ul>
+        <div class="contact-photo">
+          <!-- <img src="./images/dileep-profile.jpg" alt="Dileep Palivela"> -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
