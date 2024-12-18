@@ -571,17 +571,58 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
 }
 
-.contact-photo {
-    flex: 1;
-    text-align: center;
+.contact-photo img {
+    width: 200px; /* Set photo width */
+    height: 200px; /* Set photo height */
+    object-fit: cover; /* Maintain aspect ratio and crop if needed */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  .contact-photo img {
-    max-width: 250px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column; /* Stack content vertically on small screens */
+      align-items: flex-start;
+    }
+  
+    .contact-photo img {
+      width: 150px;
+      height: 150px;
   }
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  .contact-info {
+    max-width: 60%;
+  }
+  .contact-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .contact__list {
+    list-style: none;
+    padding: 0;
+  }
+  .contact__list li {
+    margin: 5px 0;
+  }
+  .btn-resume {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .btn-resume:hover {
+    background-color: #45a049;
+  }
+
+}
 /* --------------------------------------- */
 /* ----- Footer ----- */
 /* --------------------------------------- */
