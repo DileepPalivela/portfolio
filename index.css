@@ -79,11 +79,13 @@ body {
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
+    
 }
 
 @media(max-width: 1340px) {
     .row {
         max-width: 1100px;
+        
     }
 }
 
@@ -102,6 +104,7 @@ body {
 @media(max-width: 600px) {
     .row {
         padding: 0 var(--gutter-small);
+        
     }
 }
 
@@ -443,6 +446,12 @@ body:not(.user-is-tabbing) a:focus {
 .work__box {
     display: flex;
     align-items: center;
+    border: 2px solid #ccc; /* Add a border with a light gray color */
+  border-radius: 10px;    /* Add rounded corners */
+  padding: 20px;          /* Add some padding for better spacing */
+  margin-bottom: 20px;    /* Add some space between each work item */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better appearance */
+  background-color: black; 
 }
 
 @media(max-width: 900px) {
