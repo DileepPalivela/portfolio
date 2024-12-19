@@ -663,3 +663,20 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+.avatar img {
+    max-width: 150px;
+    border-radius: 50%;
+    background-color: #ffdc00;
+}
+
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar img {
+        margin-bottom: 20px;
+    }
+}
